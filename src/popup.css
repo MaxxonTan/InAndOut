@@ -1,3 +1,10 @@
+@font-face {
+  font-family: "kghappy";
+  src: url("./fonts//kghappy.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
 body {
   width: 400px;
   height: 550px;

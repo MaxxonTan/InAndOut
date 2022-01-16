@@ -1,10 +1,10 @@
 .ino-container {
   z-index: 20000;
   position: fixed;
-  top: 25px;
-  right: 25px;
+  top: 0px;
+  right: 0px;
 
-  max-width: 630px;
+  width: 640px;
   height: 700px;
   border-radius: 25px;
   background-color: var(--bg);
@@ -22,6 +22,7 @@
   all: revert;
   display: flex;
   align-items: center;
+  cursor: grab;
 }
 
 .ino-container > header > button:last-child {

@@ -18,10 +18,7 @@
     "48": "images/logo_48.png",
     "128": "images/logo_128.png"
   },
-  "background": {
-    "service_worker": "background.js"
-  },
-  "permissions": ["activeTab", "scripting", "tabs"],
+  "permissions": ["activeTab", "scripting"],
   "host_permissions": ["https://*/*"],
   "web_accessible_resources": [
     { "resources": ["popup.html"], "matches": ["https://*/*"] },

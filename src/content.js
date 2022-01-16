@@ -30,30 +30,30 @@ fetch(chrome.runtime.getURL("/popup.html"))
       hideButton.addEventListener("click", () => {
         container[0].classList.add("hide-container");
       });
-      const header = document.querySelector(".ino-container > header");
-
-      header.addEventListener("drag", (event) => {
-        if (event.pageX == 0 || event.pageY == 0) return;
-
-        container.style.top = `${Math.min(
-          window.innerHeight - container.clientHeight,
-          Math.max(event.pageY, 0)
-        )}px`;
-        container.style.left = `${Math.min(
-          window.innerWidth - container.clientWidth,
-          Math.max(0, event.pageX - container.clientWidth / 2)
-        )}px`;
-      });
-
-      header.addEventListener("dragend", (event) => {
-        container.style.top = `${Math.min(
-          window.innerHeight - container.clientHeight,
-          Math.max(event.pageY, 0)
-        )}px`;
-        container.style.left = `${Math.min(
-          window.innerWidth - container.clientWidth,
-          Math.max(0, event.pageX - container.clientWidth / 2)
-        )}px`;
-      });
     }
+    const header = document.querySelector(".ino-container > header");
+
+    header.addEventListener("drag", (event) => {
+      if (event.pageX == 0 || event.pageY == 0) return;
+
+      container.style.top = `${Math.min(
+        window.innerHeight - container.clientHeight,
+        Math.max(event.pageY, 0)
+      )}px`;
+      container.style.left = `${Math.min(
+        window.innerWidth - container.clientWidth,
+        Math.max(0, event.pageX - container.clientWidth / 2)
+      )}px`;
+    });
+
+    header.addEventListener("dragend", (event) => {
+      container.style.top = `${Math.min(
+        window.innerHeight - container.clientHeight,
+        Math.max(event.pageY, 0)
+      )}px`;
+      container.style.left = `${Math.min(
+        window.innerWidth - container.clientWidth,
+        Math.max(0, event.pageX - container.clientWidth / 2)
+      )}px`;
+    });
   });

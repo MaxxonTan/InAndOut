@@ -1,4 +1,18 @@
-body {
+.ino-container {
+  z-index: 20000;
+  position: fixed;
+  top: 25px;
+  right: 0;
+
   height: 500px;
   width: 700px;
+  border-radius: 25px;
+  background-color: rgb(51, 51, 51);
+  padding: 1rem;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.ino-container {
 }

@@ -19,7 +19,8 @@ body {
   width: 90%;
   height: 100%;
   background-color: var(--bg);
-  padding: 1.5rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5em;
 
   display: flex;
   flex-direction: column;
@@ -33,6 +34,7 @@ body {
   all: revert;
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
 .ino-container > header > button:last-child {
@@ -40,7 +42,18 @@ body {
   border: none;
   color: white;
   background-color: transparent;
+
   margin-left: auto;
+}
+
+.ino-container > header > p {
+  border: none;
+  color: white;
+  background-color: transparent;
+  font-size: 2rem;
+  margin-left: 1rem;
+
+  font-family: "kghappy", cursive;
 }
 
 #ino-logo {
@@ -48,16 +61,30 @@ body {
   height: 60px;
 }
 
+#ino-logo:hover {
+  animation: shake 1s linear infinite;
+}
+
 #generate {
   cursor: pointer;
   border: none;
-  color: white;
-  background-color: transparent;
+  border-radius: 10px;
+  color: var(--bg);
+  background-color: white;
   font-size: 1.25rem;
-  margin-left: 0.5rem;
+  margin: auto;
+  margin-top: 0.8rem;
 
   font-family: "kghappy", cursive;
   transition: 200ms;
+
+  display: flex;
+  justify-content: center;
+  width: fit-content;
+  height: fit-content;
+}
+
+#generate > p {
 }
 
 #generate:hover {
@@ -89,7 +116,6 @@ body {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  padding-top: 2rem;
 }
 
 .screenshot {

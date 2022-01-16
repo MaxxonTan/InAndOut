@@ -1,5 +1,5 @@
 {
-  "name": "INO - In and out",
+  "name": "In & Out",
   "description": "Speed up your web development process!",
   "version": "1.0",
   "manifest_version": 3,
@@ -11,6 +11,11 @@
       "128": "/images/logo_128.png"
     },
     "default_title": "Click me to generate snapshots!"
+  },
+  "icons": {
+    "16": "images/logo_16.png",
+    "48": "images/logo_48.png",
+    "128": "images/logo_128.png"
   },
   "background": {
     "service_worker": "background.js"

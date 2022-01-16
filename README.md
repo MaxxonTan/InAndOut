@@ -1,4 +1,5 @@
 # In & Out
+***(a hackathon project)***
 
 In & Out is small chrome extension meant to help developers quickly check if their webpage is responsive.
 With a click of a button, In & Out will generate 6 screen shots of your web app in 6 different zoom levels.

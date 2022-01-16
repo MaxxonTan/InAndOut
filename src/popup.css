@@ -146,3 +146,8 @@
 
   filter: brightness(0) invert(1);
 }
+
+.hide-container {
+  opacity: 0;
+  display: none;
+}

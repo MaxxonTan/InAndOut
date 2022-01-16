@@ -29,4 +29,15 @@ fetch(chrome.runtime.getURL("/popup.html"))
     hideButton.addEventListener("click", () => {
       container[0].classList.add("hide-container");
     });
+
+    const generate = document.getElementById("generate");
+    const screenshots = document.getElementsByClassName("screenshot");
+    console.log(screenshots);
+    //Send message to background.js
+    chrome.runtime.sendMessage(
+      { action: "screenshot", zoom: [0.1] },
+      (response) => {
+        console.log(response);
+      }
+    );
   });

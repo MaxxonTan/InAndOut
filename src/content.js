@@ -14,7 +14,7 @@ fetch(chrome.runtime.getURL("/popup.html"))
     document.head.appendChild(fontStyle);
 
     const headerImg = document.getElementById("ino-logo");
-    headerImg.src = chrome.runtime.getURL("/images/logo_48.png");
+    headerImg.src = chrome.runtime.getURL("/images/logo.png");
 
     const minimizeImg = document.querySelector("#hide > img");
     minimizeImg.src = chrome.runtime.getURL("/images/x.png");

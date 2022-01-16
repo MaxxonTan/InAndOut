@@ -1,8 +1,8 @@
+const headerImg = document.querySelector(".ino-logo");
 let changeColor = document.querySelector(".button");
 options = [""];
 
-changeColor.addEventListener("click", async () => {
-  console.log("CLICK");
+console.log(headerImg);
 
   //Zoom factor: 1 = 100%, 0.5 = 50%, 2 = 200%
   zoomFactor = 0.15;

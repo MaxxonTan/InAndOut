@@ -1,8 +1,10 @@
 let changeColor = document.querySelector(".button");
+options = [""];
 
 changeColor.addEventListener("click", async () => {
   console.log("CLICK");
 
+  //Zoom factor: 1 = 100%, 0.5 = 50%, 2 = 200%
   zoomFactor = 0.15;
   const interv = setInterval(() => {
     if (zoomFactor >= 3) {
@@ -25,14 +27,4 @@ changeColor.addEventListener("click", async () => {
       console.log("HEre");
     }
   }, 550);
-
-  // chrome.tabs.query({ active: true, currentWindow: true }, (tabs) => {
-  //   chrome.tabs.sendMessage(
-  //     tabs[0].id,
-  //     { action: "screenshot" },
-  //     (response) => {
-  //       console.log(response);
-  //     }
-  //   );
-  // });
 });

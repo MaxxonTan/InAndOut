@@ -9,3 +9,12 @@ chrome.action.onClicked.addListener((tab) => {
     target: { tabId: tab.id },
   });
 });
+
+chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
+  let resultImages = [];
+  request.zoom.forEach((element) => {
+    chrome.tabs.setZoom(element);
+  });
+
+  sendResponse({ trash: "you're trash" });
+});

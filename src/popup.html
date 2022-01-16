@@ -1,10 +1,15 @@
 <html lang="en">
+  <head>
+    <link rel="stylesheet" href="popup.css" />
+  </head>
   <body>
     <div class="ino-container" id="ino-container">
       <header draggable="true">
-        <img alt="logo" id="ino-logo" />
+        <img alt="logo" id="ino-logo" src="./images/logo.png" />
         <button id="generate">Generate</button>
-        <button id="hide" aria-label="minimize"><img alt="hide icon" /></button>
+        <button id="hide" aria-label="minimize">
+          <img alt="hide icon" src="./images//x.png" />
+        </button>
       </header>
       <main>
         <div class="screenshot">
@@ -27,15 +32,12 @@
           <img />
           <h3>300px</h3>
         </div>
-        <div class="screenshot mobile">
-          <img />
-          <h3>300px</h3>
-        </div>
-        <div class="screenshot mobile">
+        <div class="screenshot">
           <img />
           <h3>300px</h3>
         </div>
       </main>
     </div>
+    <script src="popup.js"></script>
   </body>
 </html>

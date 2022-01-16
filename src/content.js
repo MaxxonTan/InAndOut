@@ -1,3 +1,5 @@
+const DEFAULT_ZOOM_FACTORS = [0.1, 0.6, 1.5, 2, 3, 3.5];
+
 fetch(chrome.runtime.getURL("/popup.html"))
   .then((res) => res.text())
   .then(async (html) => {
@@ -56,14 +58,16 @@ fetch(chrome.runtime.getURL("/popup.html"))
         )}px`;
       });
     }
-    const screenshots = document.getElementsByClassName("screenshot");
-    console.log(screenshots);
-    //Send message to background.js
-    chrome.runtime.sendMessage(
-      { action: "screenshot", zoom: [0.1] },
-      (response) => {
-        console.log(response);
-      }
-    );
+
     const generate = document.getElementById("generate");
+    const screenshots = document.getElementsByClassName("screenshot");
+    //Send message to background.js
+    generate.addEventListener("click", () => {
+      chrome.runtime.sendMessage(
+        { action: "screenshot", zoom: DEFAULT_ZOOM_FACTORS },
+        (response) => {
+          console.log(response);
+        }
+      );
+    });
   });

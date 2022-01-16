@@ -4,8 +4,8 @@ chrome.action.onClicked.addListener((tab) => {
     files: ["content.js"],
   });
 
-  chrome.scripting.insertCSS(
-    { files: ["popup.css"], target: { tabId: tab.id } },
-    () => console.log("success??")
-  );
+  chrome.scripting.insertCSS({
+    files: ["popup.css"],
+    target: { tabId: tab.id },
+  });
 });

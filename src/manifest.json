@@ -20,6 +20,8 @@
   "web_accessible_resources": [
     { "resources": ["popup.html"], "matches": ["https://*/*"] },
     { "resources": ["popup.css"], "matches": ["https://*/*"] },
-    { "resources": ["popup.js"], "matches": ["https://*/*"] }
+    { "resources": ["popup.js"], "matches": ["https://*/*"] },
+    { "resources": ["/images/logo_48.png"], "matches": ["https://*/*"] },
+    { "resources": ["/fonts/*.ttf"], "matches": ["https://*/*"] }
   ]
 }
